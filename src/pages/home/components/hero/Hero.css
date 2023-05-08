@@ -1,0 +1,31 @@
+.LL-Hero{
+    display: grid;
+  gap: 50px 200px;
+  grid-template-columns: auto auto auto;
+  background-color: #495e57;
+  padding: 30px;
+}
+
+.LL-Hero-left{
+  margin-left: 50px;
+}
+.LL-Hero-left h1{
+  color: #f4ce14;
+  margin-bottom: 0px;
+  font-size: 40px
+  
+ }
+
+.LL-Hero-left p{
+color: #edefee;
+font-size: 20px;
+
+}
+
+.LL-Hero-left button{
+ background-color: #f4ce14;
+ padding: 15px;
+ width: 400px;
+
+ 
+  }
