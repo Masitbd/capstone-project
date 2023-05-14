@@ -15,7 +15,7 @@ const Hero = () => {
             Reserve a Table
           </button>
          </div>
-         <div>
+         <div className='LL-Hero-right'>
             <img src="https://ik.imagekit.io/zenius/Coursera/html-css/little-lemon-pizzas_v269Oq2LM.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674426273890"
  
              width={400} height={300} alt="Lettle lemon -Hero section"/>
