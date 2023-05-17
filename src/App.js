@@ -1,10 +1,10 @@
 import './App.css';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
 import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
 import Home from './pages/home/Home';
 import { useReducer } from 'react';
 import { AppProvider } from './context/appProvider/AppProvider';
+import Footer from './components/Footer/Footer';
 
 
 const Root = ()=>{
