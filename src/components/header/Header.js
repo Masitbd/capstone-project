@@ -12,9 +12,7 @@ import { faCartShopping, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
 
     const burgerRef = useRef(null);
-  
-  const menuRef = useRef(null);
-
+    const menuRef = useRef(null);
     const { windowWidth } = useWindowResize();
     const [showMenu, setShowMenu] = useState(false);
 
@@ -59,7 +57,7 @@ const Header = () => {
         height={windowWidth > 768 && windowWidth < 840 ? '50px' : '60px'}
       />
 
-{showMenu && (
+{ (
         <nav
           id="LL-HeaderMenu"
           role="menubar"
@@ -81,6 +79,7 @@ const Header = () => {
                 { key: id, name, role: 'menuitem' },
                 <Element title={title} {...linkProps}>
                   {title}
+                  
                 </Element>
               );
             })}
