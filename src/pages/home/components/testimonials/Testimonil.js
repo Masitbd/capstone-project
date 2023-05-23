@@ -16,7 +16,8 @@ const Testimonials = ({ data }) => {
             key={`testimonial-card-${name.trim()}-${id}`}
             title={`Testimonial by ${name}`}
             imagePosition="left"
-            image={image}
+            
+            image={image} height= {200}
           >
             <Heading tag="h3" size="base" className="LL-Testimonial-Name">
               {name}
