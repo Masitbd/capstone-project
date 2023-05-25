@@ -5,6 +5,8 @@ import Home from './pages/home/Home';
 import { useReducer } from 'react';
 import { AppProvider } from './context/appProvider/AppProvider';
 import Footer from './components/Footer/Footer';
+import { BookingPage } from './pages/home/Booking/BookingPage';
+import { ConfirmedBooking } from './pages/home/Booking/pages/ConfirmedBooking/ConfirmedBooking';
 
 
 const Root = ()=>{
@@ -20,6 +22,9 @@ const Root = ()=>{
 const router = createBrowserRouter(createRoutesFromElements(
  <Route path='/' element={<Root />}>
   <Route index element = {<Home />} />
+  <Route path="bookings" element={<BookingPage />}>
+        <Route path="thank-you" element={<ConfirmedBooking />} />
+      </Route>
 
  </Route> 
 ))
