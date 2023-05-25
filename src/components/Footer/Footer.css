@@ -26,4 +26,10 @@ footer section[class^='LL-Footer'] {
 
 .LL-FooterNavigation > ul > li {
   padding: 4px 0;
+  
+}
+
+ul li::marker {
+  color: white;
+  font-size: 1.5em;
 }

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
-    const nevigate = useNavigate()
+    const navigate = useNavigate()
     return (
         <section className='LL-Hero'>
          <div className='LL-Hero-left'>
@@ -11,7 +11,7 @@ const Hero = () => {
            <p className='subtitle'>Chicago</p>
            <p className='LL-Hero-desc'>We are a family owned Mediterranean restaurant, focused on traditional
           recipes served with a modern twist.</p>
-          <button className='LL-Hero-btn'>
+          <button className='LL-Hero-btn' onClick={() => navigate('/bookings')}>
             Reserve a Table
           </button>
          </div>
